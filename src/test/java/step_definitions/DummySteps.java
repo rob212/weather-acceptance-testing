@@ -1,27 +1,28 @@
 package step_definitions;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import static org.junit.Assert.assertEquals;
+
 public class DummySteps {
 
+    private int total = 0;
+
     @Given("^some fake setup$")
-    public void some_fake_setup() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void someFakeSetup() throws Throwable {
+        // do nothing, just a dummy placeholder
     }
 
     @When("^we some (\\d+) and (\\d+)$")
-    public void we_some_and(int arg1, int arg2) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void weSomeAnd(int arg1, int arg2) throws Throwable {
+        this.total = arg1 + arg2;
     }
 
     @Then("^we get (\\d+)$")
-    public void we_get(int arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void weGet(int arg1) throws Throwable {
+        assertEquals(total, 2);
     }
+
 }
