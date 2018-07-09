@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: RunCalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.478 s - in RunCalculatorTest
