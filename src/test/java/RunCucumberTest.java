@@ -8,5 +8,5 @@ import org.junit.runner.RunWith;
         glue = {"step_definitions"},
         format = {"pretty", "html:target/cucumber-reports/cucumber-pretty"},
         snippets = SnippetType.CAMELCASE)
-public class RunCalculatorTest {
+public class RunCucumberTest {
 }

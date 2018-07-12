@@ -15,14 +15,14 @@ public class DummySteps {
         // do nothing, just a dummy placeholder
     }
 
-    @When("^we some (\\d+) and (\\d+)$")
-    public void weSomeAnd(int arg1, int arg2) throws Throwable {
-        this.total = arg1 + arg2;
+    @When("^we sum (\\d+) and (\\d+)$")
+    public void weSomeAnd(int a, int b) throws Throwable {
+        this.total = a + b;
     }
 
     @Then("^we get (\\d+)$")
-    public void weGet(int arg1) throws Throwable {
-        assertEquals(total, 2);
+    public void weGet(int expected) throws Throwable {
+        assertEquals(total, expected);
     }
 
 }
